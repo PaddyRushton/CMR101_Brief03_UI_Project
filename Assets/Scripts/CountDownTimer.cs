@@ -12,7 +12,7 @@ public class CountDownTimer : MonoBehaviour
     private float vignetteValue = 0;
     //private float motionBlurValue = 0;
     private float bloomValue = 0 ;
-    private float totalGameTime = 120;
+    private float totalGameTime = 80;
 
     void Start()
     {
@@ -54,7 +54,7 @@ public class CountDownTimer : MonoBehaviour
         }
         */
 
-        bloomValue = (0.00001f / totalGameTime * (Mathf.Pow(Time.realtimeSinceStartup, 4)));
+        bloomValue = (0.00001f / totalGameTime * (Mathf.Pow(Time.realtimeSinceStartup, 3.5f)));
         //Debug.Log("Bloom Value" + radioactivityBloom.intensity.value);
         radioactivityBloom.intensity.value = bloomValue;
 
