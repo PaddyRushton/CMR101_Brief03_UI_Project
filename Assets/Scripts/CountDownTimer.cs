@@ -54,7 +54,7 @@ public class CountDownTimer : MonoBehaviour
         }
         */
 
-        bloomValue = (0.00001f / totalGameTime * (Mathf.Pow(Time.realtimeSinceStartup, 3.5f)));
+        bloomValue = (0.00001f / totalGameTime * (Mathf.Pow(Time.realtimeSinceStartup, 4f)));
         //Debug.Log("Bloom Value" + radioactivityBloom.intensity.value);
         radioactivityBloom.intensity.value = bloomValue;
 
